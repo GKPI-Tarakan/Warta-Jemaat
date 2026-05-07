@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Warta Jemaat GKPI Tarakan</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .mobile-container {
+            width: 100%;
+            max-width: 480px; /* Mode tampilan telepon seluler */
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow-x: hidden;
+        }
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 1.5rem; }
+        .header p { margin: 5px 0 0; font-size: 0.9rem; color: #ecf0f1; }
+        .section {
+            padding: 15px;
+            border-bottom: 5px solid var(--bg-color);
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        /* Tab Styles untuk Keuangan */
+        .tabs {
+            display: flex;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid var(--accent-color);
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            background-color: white;
+            color: var(--accent-color);
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .tab-btn.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #dee2e6;
+            text-align: left;
+        }
+        th { background-color: var(--bg-color); }
+        .amount { text-align: right; white-space: nowrap; }
+        .total-row { font-weight: bold; background-color: #e8f4fd; }
+        
+        /* Read More Styles */
+        .read-more-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .read-more-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-weight: bold;
+        }
+        .contact-list, .schedule-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-list li, .schedule-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+        .highlight-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="mobile-container">
+    <!-- Header Aplikasi -->
+    <div class="header">
+        <h1>Warta Jemaat GKPI Tarakan</h1>
+        <p>Edisi Minggu, 12 April 2026</p>
+        <p style="font-size: 0.75rem; margin-top:10px;">Jl. P. Diponegoro RT.01 NO. 18 Kel. Pamusian, Tarakan</p>
+    </div>
+
+    <!-- Seksi Titik Teduh (Renungan) -->
+    <div class="section">
+        <h2 class="section-title">Titik Teduh: BERANI MEMBERITAKAN KEBENARAN</h2>
+        <p><em>“Ada seorang lagi yang bernubuat demi nama TUHAN, yaitu Uria bin Semaya dari Kiryat-Yearim. Dia bernubuat tentang kota dan negeri ini sama seperti yang dikatakan Yeremia.” (Yeremia 26:20 TB)</em></p>
+        <p>
+            Biasanya ketika menonton film, pada umumnya film tersebut akan berujung dengan happy ending atau akhir yang bahagia. 
+            Tetapi hal ini tidak berlaku atau tidak sesuai dengan kenyataan dalam kehidupan sebagaimana kisah tokoh dalam pasal ini.
+        </p>
+        
+        <div id="titikTeduhLanjutan" class="read-more-content">
+            <p>
+                Setelah bagian pertama (Pasal 1-25) berisi kisah pengalaman sang nabi. 
+                Di pasal ini terdapat penjelasan bahwa khotbah Nabi Yeremia di bait Allah yang menubuatkan bahwa kota Yerusalem akan dihukum Allah seperti kota Silo (7:14) – terwujud di awal pemerintahan Yoyakim, anak Raja Yosia (26:1-6).
+            </p>
+            <p>
+                Di sini juga dikisahkan reaksi para pendengar khotbahnya (26:7-11). 
+                Bagian kedua menunjukkan bahwa para utusan Allah yang sama-sama berani berkhotbah dengan terus terang tentang hukuman Allah atas Yerusalem dan bangsa Yehuda bisa mengalami akhir yang berbeda.
+            </p>
+            <p>
+                Khotbah Yeremia menuai ancaman hukuman mati, namun dia selamat karena ada yang bersimpati dan melindunginya (26:16, 24). 
+                Orang-orang di zaman Raja Hizkia nampaknya tidak membunuh nabi Mikha atas khotbah kerasnya (Mikha 1:1; 3:12), sehingga hukuman Allah tidak dijatuhkan pada zaman Hizkia.
+            </p>
+            <p>
+                Akan tetapi, Nabi Uria mengalami akhir yang tragis. Dia dibunuh oleh utusan raja Yoyakim (26:20-23). 
+                Uria juga adalah nabi yang bernubuat demi nama Tuhan. Ia bukan bernubuat palsu. 
+                Isi nubuatnya sama dengan Yeremia, berasal dari Tuhan. 
+                Meskipun hidupnya terancam, ia tetap menyampaikan pesan Tuhan kepada Yehuda.
+            </p>
+            <p>
+                Setelah bernubuat, ia lari ke Mesir. Sayangnya, raja Yoyakim berhasil menemukan dan membawanya kembali. Uria pun dibunuh dengan pedang.
+            </p>
+            <p>
+                Menjalankan perintah Tuhan tidaklah mudah. Ada tantangan dan risiko yang harus dihadapi, bahkan sampai membawa kematian. 
+                Kita tentu berdoa agar terhindar dari hambatan tersebut. Walaupun demikian, tantangan yang ada kiranya tidak menyurutkan kita menyampaikan pesan Tuhan kepada umat-Nya.
+            </p>
+            <p>
+                Tuhan Yesus telah memperingatkan bahwa mengikut Dia adalah jalan sempit (ada salib) yang menuju keselamatan. 
+                Saat menghadapi ujian atau pencobaan, kita harus berani berkata dan bertindak benar sesuai firman Allah. 
+                Meskipun akhir yang kita alami di dunia tak seindah di film-film, ingatlah bahwa Allah menjamin happy ending bagi kita di Sorga.
+				-IW- (Renungan Harian GKPI Edisi bulan Mei)
+            </p>
+            <div class="highlight-box">
+                <strong></strong>
+            </div>
+        </div>
+        <button id="btnReadMore" class="read-more-btn" onclick="toggleReadMore()">Baca Selengkapnya</button>
+    </div>
+
+    <!-- Seksi Laporan Keuangan -->
+    <div class="section">
+        <h2 class="section-title">Laporan Keuangan Jemaat</h2>
+        
+        <div class="highlight-box">
+            Saldo Kas Tunai (05 April 2026): <strong>Rp 3.496.483</strong><br>
+            Saldo di Rek. BPD Per April 2026: <strong>Rp 13.263.368</strong><br>
+            Saldo Cash per Minggu, 12 April 2026: <strong>Rp 9.685.483</strong>
+        </div>
+
+        <!-- Pemisahan Tab Pemasukan & Pengeluaran -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('pemasukanTab')">Pemasukan</button>
+            <button class="tab-btn" onclick="openTab('pengeluaranTab')">Pengeluaran</button>
+        </div>
+
+        <!-- Konten Pemasukan -->
+        <div id="pemasukanTab" class="tab-content active">
+            <table>
+                <tr><th colspan="2">Kolekte Ibadah Jumat Agung, 03 April 2026</th></tr>
+                <tr><td>Kantong Majelis Jemaat</td><td class="amount">1.085.000</td></tr>
+                <tr><td>Kantong Hari Raya Gerejawi (MS)</td><td class="amount">698.000</td></tr>
+                <tr><td>Kantong Panitia HRG</td><td class="amount">798.000</td></tr>
+                <tr><td>Kotak Syukur Perjamuan Kudus</td><td class="amount">2.513.000</td></tr>
+                
+                <tr><th colspan="2">Kolekte Ibadah Paskah, 05 April 2026</th></tr>
+                <tr><td>Kantong Rutin</td><td class="amount">685.000</td></tr>
+                <tr><td>Kantong MS GKPI</td><td class="amount">508.000</td></tr>
+                <tr><td>Kantong Panitia HRG</td><td class="amount">456.000</td></tr>
+                <tr><td>Kantong PKAJ</td><td class="amount">184.000</td></tr>
+                
+                <tr><th colspan="2">Perpuluhan & Syukur</th></tr>
+                <tr><td>Sdri. Sheny Aprelia</td><td class="amount">500.000</td></tr>
+                <tr><td>Sdri. Sally Amelia</td><td class="amount">220.000</td></tr>
+                <tr><td>Bpk. Natanel Aber (HUT)</td><td class="amount">100.000</td></tr>
+                <tr><td>Sdr. Carles, S.ip</td><td class="amount">200.000</td></tr>
+                <tr><td>Kel. Agus Vinus</td><td class="amount">500.000</td></tr>
+                
+                <tr><th colspan="2">Lain-lain</th></tr>
+                <tr><td>Aksi Dana 5000 MS GKPI</td><td class="amount">514.000</td></tr>
+                <tr><td>Pembayaran Kartu Sidi (8 Orang @50.000)</td><td class="amount">400.000</td></tr>
+                
+                <tr><th colspan="2">Kolekte Ibadah Kelompok 3 (08 April 26)</th></tr>
+                <tr><td>Kantong 1</td><td class="amount">180.000</td></tr>
+				<tr><td>Kantong 2</td><td class="amount">181.000</td></tr>
+				<tr class="total-row"><td>TOTAL PEMASUKAN</td><td class="amount">13.483.000</td></tr>
+            </table>
+        </div>
+
+        <!-- Konten Pengeluaran -->
+        <div id="pengeluaranTab" class="tab-content">
+            <table>
+                <tr><th colspan="2">Rincian Pengeluaran</th></tr>
+                <tr><td>Ucapan Terima Kasih u/Pemain Musik an. Bpk. Andreas</td><td class="amount">150.000</td></tr>
+                <tr><td>Ucapan Terima Kasih u/Operator Multimedia an. Sdri. Desi</td><td class="amount">50.000</td></tr>
+                <tr><td>Fotocopy Buku Bahan Ajar u/PKAJ</td><td class="amount">206.000</td></tr>
+                <tr><td>Diserahkan ke Panitia HRG (Kantong 2 Ibadah 18 Mar)</td><td class="amount">83.000</td></tr>
+                <tr><td>Diserahkan ke Panitia HRG Kolekte Jumat Agung</td><td class="amount">798.000</td></tr>
+                <tr><td>Diserahkan ke Panitia HRG Kolekte Ibadah Paskah</td><td class="amount">456.000</td></tr>
+                <tr><td>Kontribusi GKPI Jemaat Tarakan u/ Paskah BAMAGNAS</td><td class="amount">500.000</td></tr>
+                <tr><td>Konsumsi dalam Rangka Persiapan SIDI</td><td class="amount">119.000</td></tr>
+                <tr><td>Transportasi u/PKLJ bulan April 26</td><td class="amount">200.000</td></tr>
+                <tr><td>Ucapan Terima Kasih u/Pelatih Paduan Suara</td><td class="amount">500.000</td></tr>
+                <tr><td>Diserahkan ke Panitia HRG Kantong 2 Ibadah Kel.3</td><td class="amount">171.000</td></tr>
+                <tr><td>Diakonia Sakit u/Kakek Yahya R</td><td class="amount">250.000</td></tr>
+                <tr class="total-row"><td>TOTAL PENGELUARAN</td><td class="amount">3.483.000</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Seksi Jadwal Ibadah -->
+    <div class="section">
+        <h2 class="section-title">Jadwal Kebaktian Sepekan</h2>
+        <ul class="schedule-list">
+            <li><strong>Ibadah Kel. 1:</strong> Rabu, 15 April 26 (19.30 Wita) di Kel. Dkn. Jefli. Firman: Pdt. Kristina Natalia, M.Th</li>
+            <li><strong>PKLJ:</strong> Jumat, 17 April 26 (15.00 Wita) di Bpk. Natanel Aber / Ibu Lini. Firman: Pdt. Kristina Natalia, M.Th</li>
+            <li><strong>PKPJ:</strong> Jumat, 17 April 26 (19.30 Wita) di Gedung Gereja. Firman: Pdt. Ari Hepi Sari, S.Th</li>
+            <li><strong>PKAJ:</strong> Minggu, 19 April 26 (09.30 Wita) di Ruang Sekolah Minggu. Pelayan: Guru SHM</li>
+            <li><strong>Kebaktian Minggu:</strong> 19 April 2026 (09.00 Wita). Firman: Pdt. Kristina Natalia, M.Th</li>
+        </ul>
+        <div class="highlight-box">
+            <strong>Informasi:</strong> Ibadah padang jemaat dalam rangka paskah akan dilaksanakan pada hari Sabtu, 18 April 2026. Akan dilaksanakan Baptisan Kudus, bagi yang anaknya belum dibaptis silahkan mendaftar ke Majelis Jemaat.
+        </div>
+    </div>
+
+    <!-- Seksi Informasi Tambahan (Ringkas) -->
+    <div class="section" style="border-bottom: none;">
+        <h2 class="section-title">Yang berulang tahun dalam minggu ini</h2>
+        <ul class="contact-list">
+            <li>Ibu Anita Suru (12 April)</li>
+            <li>Ibu Pnt. Fenny (12 April)</li>
+            <li>Valeria Isabelle Nathania (14 April)</li>
+            <li>Bpk. Tri Prasetio (15 April)</li>
+            <li>Ibu Onny Ansania (16 April)</li>
+            <li>Adam Apriyano Yada (16 April)</li>
+            <li>Try Aprilia Yada (17 April)</li>
+            <li>Lin Suwanto Kusuma (18 April)</li>
+            <li>Gilbert Pratama Supriadi (18 April)</li>
+        </ul>
+
+        <h2 class="section-title">Kehadiran Jemaat</h2>
+	<ul class="contact-list">
+            <li>Laki-laki (50 Orang)</li>
+            <li>Perempuan (75 Orang)</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Fungsi Tab untuk Pemasukan dan Pengeluaran
+    function openTab(tabName) {
+        var i;
+        var tabContent = document.getElementsByClassName("tab-content");
+        var tabBtns = document.getElementsByClassName("tab-btn");
+        
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+            tabBtns[i].className = tabBtns[i].className.replace(" active", "");
+        }
+        
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.className += " active";
+    }
+
+    // Fungsi Read More untuk Titik Teduh
+    function toggleReadMore() {
+        var content = document.getElementById("titikTeduhLanjutan");
+        var btn = document.getElementById("btnReadMore");
+        
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            btn.innerHTML = "Baca Selengkapnya";
+        } else {
+            content.style.display = "block";
+            btn.innerHTML = "Tutup";
+        }
+    }
+</script>
+
+</body>
+</html>
